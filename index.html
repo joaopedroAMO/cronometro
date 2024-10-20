@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>cronômetro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cronômetro</h1>
+
+        <input type="number" name="" id="inputSet" placeholder="Tempo de série">
+        <input type="number" name="" id="inputStop" placeholder="Tempo de descanço">
+
+        <div class="circle">
+            <div id="timer">
+                <div class="time" id="minutes">00</div>
+                <div class="separador">:</div>
+                <div class="time" id="seconds">00</div>
+                <div class="separador">:</div>
+                <div class="time" id="miliseconds">000</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="btnStart">Iniciar</button>
+            <button class="btn" id="btnPause">Pausar</button>
+            <button class="btn" id="btnContinuar">Continuar</button>
+            <button class="btn" id="btnStop">Resetar</button>
+        </div>
+        <p>Séries trabalhadas: <span id="sets">0</span></p>
+    </div>
+</body>
+</html>
